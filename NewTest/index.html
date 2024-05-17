@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hẹt ta</title>
+    <script>
+      var soundPaths = ["kurukuru.mp3", "kururinnn.mp3"];
+
+      function playRandomSound() {
+        var randomIndex = Math.floor(Math.random() * soundPaths.length);
+        var randomSoundPath = soundPaths[randomIndex];
+        var audio = new Audio(randomSoundPath);
+        audio.play();
+      }
+    </script>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .imgae-class {
+      }
+      hr {
+        border-style: dashed;
+        border-color: aliceblue;
+        border-width: 2px;
+      }
+      h1 {
+        text-align: center;
+        color: aliceblue;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        color: aliceblue;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      p {
+        text-align: center;
+        color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h4 {
+        text-align: center;
+        color: aliceblue;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        background-color: #7b4a90;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      }
+      button:hover {
+        background-color: #2a0839;
+      }
+      .responsive-image {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        max-height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first" style="background-color: #b776d6">
+      <h1>Kuru Teri~</h1>
+      <hr />
+      <h2>a jump to the sky turns into a rider kick</h2>
+      <br /><br />
+      <h4>The kuru~ has been squished</h4>
+      <div class="container">
+        <button onclick="playRandomSound()">Play Sound</button>
+      </div>
+      <h4>
+        This website copy by
+        <a href="https://herta.eu.org/">herta.eu.org/</a> because this website
+        has lost sound
+      </h4>
+      <hr />
+      <br />
+    </div>
+    <div class="footer">
+      <img src="card.png" alt="" class="responsive-image" />
+      <div id="footer-text">
+        <p>
+          Herta gif made by <br />
+          <a href="https://twitter.com/Seseren_kr">@Seseren_kr</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
